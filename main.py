@@ -10,6 +10,7 @@ class regress(object):
         self.polynomials = polynomials
         self.train_test = train_test
 
+
     def fit(self):
         before = self.data.shape[0]
         self.data = self.data.dropna(subset=[self.y])
